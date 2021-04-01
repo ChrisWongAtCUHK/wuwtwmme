@@ -1,0 +1,85 @@
+
+      <!DOCTYPE html>
+      <html>
+        <head>
+          
+          <script type="text/javascript" src="/resources/$BSD-plugins/output-share.js"></script>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">
+  (function() {
+  function _ls(){const e={};let t=!1;function r(){t||(console.warn("Access to localStorage is not permitted from user code. A mock localStorage will be used instead."),t=!0)}return Object.defineProperty(e,"key",{value:function(t){const r=Object.keys(e)[t];return void 0===r?null:unescape(r)},writable:!1,configurable:!1,enumerable:!1}),Object.defineProperty(e,"getItem",{value:function(t){r();const i=escape(t+"");return void 0===e[i]?null:null===e[i]?"null":e[i]},writable:!1,configurable:!1,enumerable:!1}),Object.defineProperty(e,"setItem",{value:function(t,i){r(),e[escape(t)]="object"!=typeof i?i+"":i},writable:!1,configurable:!1,enumerable:!1}),Object.defineProperty(e,"removeItem",{value:function(t){r(),t&&delete e[escape(t)]},writable:!1,configurable:!1,enumerable:!1}),Object.defineProperty(e,"length",{get:function(){return Object.keys(e).length},configurable:!1,enumerable:!1}),Object.defineProperty(e,"clear",{value:function(){r(),Object.keys(e).forEach((function(t){delete e[t]}))},writable:!1,configurable:!1,enumerable:!1}),e};
+  Object.defineProperty(window, 'localStorage', {value: _ls()});
+})();
+</script>
+          <style>
+        img {
+            width: 400PX;
+        }
+
+        p {
+            font-family: DM Serif Display;
+        }
+
+        h1 {
+            font-family: DM Serif Display;
+        }
+
+        body {
+            text-align: center;
+        }
+    </style><link rel=""preconnect" href="https://fonts.gstatic.com" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" />
+          
+          
+          
+        </head>
+        <body>
+          
+    <h1>Adventure gram</h1>
+    <img src="https://mymodernmet.com/wp/wp-content/uploads/2017/03/gabrielius-khiterer-stray-cats-4.jpg" id="imgstory">
+    <p id="pstory">You woke up and saw a cat looked at you.The cat said "Hi, stupid human."I can help you to leave the maze.And you said:</p>
+    <section id="buttons">
+        <button id="btnYes">Yes</button>
+        <button id="btnNo">No</button>
+    </section>
+    
+
+          
+          <script>
+        btnYes.onclick = function() {
+            const btneasy = document.createElement('button'),
+                btnDifficult = document.createElement('button');
+            imgstory.src = 'https://fthmb.tqn.com/WT279qKYpIXOKg9gPT8HrOmokC4=/768x0/filters:no_upscale()/iStock-543175480-59f24081d088c000104bf473.jpg';
+            pstory.textContent = 'The cat became a boy. And said "Follow me."';
+            buttons.innerHTML = '';
+            btneasy.textContent = 'Easy';
+            btneasy.onclick = function() {
+                imgstory.src = 'https://tantalus.co.nz/wp-content/uploads/2017/07/Sky-background-1920x1080.jpg';
+                pstory.textContent = 'You escape!';
+                buttons.innerHTML = '';
+            };
+            btnDifficult.textContent = 'Difficult';
+            btnDifficult.onclick = function() {
+                imgstory.src = 'https://i.ytimg.com/vi/JEzqoRCgD5Q/maxresdefault.jpg';
+                pstory.textContent = 'You escape and  find a lot of treasures!!!';
+                buttons.innerHTML = '';
+            };
+            buttons.append(btneasy, btnDifficult);
+        };
+        btnNo.onclick = function() {
+            const btnSeverDaysAgo = document.createElement('button');
+            imgstory.src = 'https://1.bp.blogspot.com/-5hVHCqKo0rU/WJiTS_MC2eI/AAAAAAAAByw/E6HJO5Hu4qAjw44LDD2RqSjxRTnBTilPwCPcB/s640/rebeka-cat-art-dora-hathazi-mendes.JPG';
+            pstory.textContent = 'The cat said\'I hope you do not regret it.\'';
+            buttons.innerHTML = '';
+            btnSeverDaysAgo.textContent = 'Sever Day Ago';
+            btnSeverDaysAgo.onclick = function() {
+                imgstory.src = 'http://www.jaggededgecommunications.com/wp-content/uploads/2016/01/content-1024x1024.jpg';
+                pstory.textContent = 'You die';
+                buttons.innerHTML = '';
+            };
+            buttons.append(btnSeverDaysAgo);
+        };
+    </script>
+          
+        </body>
+      </html>
+    
